@@ -1,0 +1,150 @@
+.medicine-list-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin-top: 200px;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.medicine-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.medicine-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 35px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.medicine-card:hover {
+    transform: scale(1.05);
+}
+
+.medicine-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ba1010;
+}
+
+.stock-info {
+    font-size: 1rem;
+    color: #8e8e8e;
+    margin: 10px 0;
+}
+
+.added-date {
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: #357ab7;
+}
+
+.btn.cancel {
+    background-color: #f44336;
+}
+
+.btn.cancel:hover {
+    background-color: #d32f2f;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pagination-btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #357ab7;
+}
+
+.pagination-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.edit-stock input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.edit-stock button {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.save {
+    background-color: #4caf50;
+}
+
+.save:hover {
+    background-color: #45a047;
+}
+
+.cancel {
+    background-color: #f44336;
+}
+
+.cancel:hover {
+    background-color: #d32f2f;
+}
+
+.no-results-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
